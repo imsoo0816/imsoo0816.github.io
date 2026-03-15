@@ -9,7 +9,7 @@ body{
 
 .wrapper{
     width:360px;
-    height: calc( 100vh - env(safe-area-inset-bottom));
+    height: calc( 100vh - 20px - env(safe-area-inset-bottom));
     bottom: calc(env(safe-area-inset-bottom));
     background:white;
     border-radius:30px;
