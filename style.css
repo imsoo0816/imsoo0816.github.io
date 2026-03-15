@@ -9,7 +9,7 @@ body{
 
 .wrapper{
     width:360px;
-    height: 100vh;
+    height: 100%;
     background:white;
     border-radius:30px;
     overflow:hidden;
