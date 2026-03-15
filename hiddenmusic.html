@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>임수연 자기소개 페이지</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="wrapper">
+     <!-- 상단 -->
+    <header class="header">
+        <img src="./images/insta_2.png" alt="인스타 프로필2">
+                <label class="insta-toggle">
+  <input type="checkbox" id="toggleBtn">
+  <span class="slider"></span>
+</label>
+    </header>
+
+    <!-- 메인 내용 -->
+    <main>
+        <div class="main">
+<h4>최근에 장르별로 꽂힌 노래들이에요</h4>
+<div class="video-card">
+     <iframe 
+        width="350" 
+        height="200"
+        src="https://www.youtube.com/embed/9iyJOXeHxq8"
+        title="YouTube video player"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+    
+
+    <h3>발라드</h3>
+    <p>김필-어느 날 우리</p>
+    <iframe 
+        width="350" 
+        height="200"
+        src="https://www.youtube.com/embed/4k_HiMxY_gg"
+        title="YouTube video player"
+        frameborder="1"
+        allowfullscreen>
+    </iframe>
+    <h3>케이팝</h3>
+    <p>하츠투하츠- apple pie</p>
+    <iframe 
+        width="350" 
+        height="200"
+        src="https://www.youtube.com/embed/9VU1les4yh4"
+        title="YouTube video player"
+        frameborder="2"
+        allowfullscreen>
+    </iframe>
+    <h3>힙합</h3>
+    <p>제네 더 질라- No Easy</p>
+    <iframe 
+        width="350" 
+        height="200"
+        src="https://www.youtube.com/embed/cw87Hix2TSU"
+        title="YouTube video player"
+        frameborder="3"
+        allowfullscreen>
+    </iframe>
+    <h3>인디</h3>
+    <p>윤지영,카더가든- 언젠가 너와 나</p>
+</div>
+
+
+        </div>
+        
+    </main>
+
+    <!-- 하단 -->
+    <footer class="footer">
+        <nav class="nav-bar">
+            <a href="/">
+                <img src="./images/insta_icon.png" alt="인스타 로고">
+            </a>
+
+            <a href="gallery.html">
+                <img src="./images/gallery_icon.png" alt="사진첩 로고">
+            </a>
+
+            <a href="youtube.html">
+                <img src="./images/youtube_icon.png" alt="유튜브 로고">
+            </a>
+
+            <a href="music.html">
+                <img src="./images/music_icon.png" alt="음악 로고">
+            </a>
+        </nav>
+    </footer>
+</div>
+   <script>
+  const toggleBtn = document.getElementById('toggleBtn');
+
+  // 페이지별 토글 초기 상태 설정
+  if (window.location.pathname.includes('hiddenmusic.html')) {
+    toggleBtn.checked = true;  // hidden.html에서는 오른쪽
+  } else {
+    toggleBtn.checked = false; // index.html에서는 왼쪽
+  }
+
+  // 체크 상태가 바뀔 때
+  toggleBtn.addEventListener('change', () => {
+    if (toggleBtn.checked) { 
+      window.location.href = 'hiddenmusic.html'; // 오른쪽으로 이동
+    } else {
+      window.location.href = 'music.html';  // 왼쪽으로 이동
+    }
+  });
+</script>
+
+</body>
+</html>

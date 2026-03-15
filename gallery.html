@@ -12,22 +12,36 @@
      <!-- 상단 -->
     <header class="header">
         <img src="./images/insta_1.png" alt="인스타 프로필1">
-<label class="insta-toggle">
+      <label class="insta-toggle">
   <input type="checkbox" id="toggleBtn">
   <span class="slider"></span>
-</label>    </header>
+</label>
+    </header>
 
     <!-- 메인 내용 -->
     <main>
         <div class="main">
-<img src="./images/intro_p.jpg" alt="">
-<p> <strong>yeoon_0oh</strong>   안녕하세요! 국민대 멋쟁이 사자처럼 14기 <br>
-    프론트 아기사자 임수연입니다!!<br>
-      저는 인공지능학부 24학번이고 나이는 05년생입니다! <br>
-    아래 제가 자주 사용하는 어플들로  <br>
-    저의 취향을 낱낱이 알려드리겠습니다 후훗<br>
-    맨 위 프로필 옆 토글을 누르면 더 개인적인 취향이!!
-</p>
+            <div>
+                <img src="./images/socc_img.jpg" alt="">
+                <h4>저는 축구를 즐겨봅니다</h4>
+            </div>
+            <div>
+<img src="./images/base_img.jpg" alt="">
+                <h4>야구도 가끔 보고요</h4>
+
+            </div>
+<div>
+<img src="./images/mc_img.jpg" alt="">
+                <h4>마크에서 트롤짓을 자주할 수 있어요 <br>미리 죄송합니다</h4>
+</div>
+<div>
+<img src="./images/jmt_img.jpg" alt="">
+                <h4>요리하는 것도 좋아합니다 밑키트 아니에요ㅜ</h4>
+
+</div>
+
+
+
         </div>
         
     </main>
@@ -53,12 +67,11 @@
         </nav>
     </footer>
 </div>
-
-<script>
+   <script>
   const toggleBtn = document.getElementById('toggleBtn');
 
   // 페이지별 토글 초기 상태 설정
-  if (window.location.pathname.includes('hidden.html')) {
+  if (window.location.pathname.includes('hiddengallery.html')) {
     toggleBtn.checked = true;  // hidden.html에서는 오른쪽
   } else {
     toggleBtn.checked = false; // index.html에서는 왼쪽
@@ -67,13 +80,12 @@
   // 체크 상태가 바뀔 때
   toggleBtn.addEventListener('change', () => {
     if (toggleBtn.checked) { 
-      window.location.href = 'hidden.html'; // 오른쪽으로 이동
+      window.location.href = 'hiddengallery.html'; // 오른쪽으로 이동
     } else {
-      window.location.href = 'index.html';  // 왼쪽으로 이동
+      window.location.href = 'gallery.html';  // 왼쪽으로 이동
     }
   });
 </script>
-   
 
 </body>
 </html>

@@ -11,23 +11,53 @@
 <div class="wrapper">
      <!-- 상단 -->
     <header class="header">
-        <img src="./images/insta_1.png" alt="인스타 프로필1">
-<label class="insta-toggle">
+        <img src="./images/insta_2.png" alt="인스타 프로필2">
+               <label class="insta-toggle">
   <input type="checkbox" id="toggleBtn">
   <span class="slider"></span>
-</label>    </header>
+</label>
+    </header>
 
     <!-- 메인 내용 -->
     <main>
         <div class="main">
-<img src="./images/intro_p.jpg" alt="">
-<p> <strong>yeoon_0oh</strong>   안녕하세요! 국민대 멋쟁이 사자처럼 14기 <br>
-    프론트 아기사자 임수연입니다!!<br>
-      저는 인공지능학부 24학번이고 나이는 05년생입니다! <br>
-    아래 제가 자주 사용하는 어플들로  <br>
-    저의 취향을 낱낱이 알려드리겠습니다 후훗<br>
-    맨 위 프로필 옆 토글을 누르면 더 개인적인 취향이!!
-</p>
+
+<div class="video-card">
+    <iframe 
+        width="350" 
+        height="200"
+        src="https://www.youtube.com/embed/GyXP9lg9Fz0"
+        title="YouTube video player"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+    
+
+    <h3>좋아하는 시리즈</h3>
+    <p>옛날꺼로 갈수록 재밌어요</p>
+    <iframe 
+        width="350" 
+        height="200"
+        src="https://www.youtube.com/embed/Hqi6mbTUFuI"
+        title="YouTube video player"
+        frameborder="1"
+        allowfullscreen>
+    </iframe>
+    <h3>침착맨 좋아하시는 분</h3>
+    <p>저는 가끔 봐여</p>
+    <iframe 
+        width="350" 
+        height="200"
+        src="https://www.youtube.com/embed/hEarcgjuLX0"
+        title="YouTube video player"
+        frameborder="2"
+        allowfullscreen>
+    </iframe>
+    <h3>최고의 연프</h3>
+    <p>어느연프도 따라올 수 없는 나솔감성,,</p>
+</div>
+
+
         </div>
         
     </main>
@@ -53,12 +83,11 @@
         </nav>
     </footer>
 </div>
-
-<script>
+   <script>
   const toggleBtn = document.getElementById('toggleBtn');
 
   // 페이지별 토글 초기 상태 설정
-  if (window.location.pathname.includes('hidden.html')) {
+  if (window.location.pathname.includes('hiddenyoutube.html')) {
     toggleBtn.checked = true;  // hidden.html에서는 오른쪽
   } else {
     toggleBtn.checked = false; // index.html에서는 왼쪽
@@ -67,13 +96,12 @@
   // 체크 상태가 바뀔 때
   toggleBtn.addEventListener('change', () => {
     if (toggleBtn.checked) { 
-      window.location.href = 'hidden.html'; // 오른쪽으로 이동
+      window.location.href = 'hiddenyoutube.html'; // 오른쪽으로 이동
     } else {
-      window.location.href = 'index.html';  // 왼쪽으로 이동
+      window.location.href = 'youtube.html';  // 왼쪽으로 이동
     }
   });
 </script>
-   
 
 </body>
 </html>
