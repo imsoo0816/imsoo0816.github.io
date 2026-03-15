@@ -76,7 +76,7 @@ main{
     overflow-y:auto;
     display:flex;
     justify-content:center;
-    padding:20px 0 calc(100px + env(safe-area-inset-bottom)) 0;
+    padding:20px 0 calc(env(safe-area-inset-bottom)) 0;
     margin-bottom:20px;
 }
 #playlist{
