@@ -23,7 +23,7 @@
 <img src="./images/intro_p.jpg" alt="">
 <p> <strong>yeoon_0oh</strong>   안녕하세요! 국민대 멋쟁이 사자처럼 14기 <br>
     프론트 아기사자 임수연입니다!!<br>
-      저는 인공지능학부 24학번이고 나이는 05년생입니다!! <br>
+      저는 인공지능학부 24학번이고 나이는 05년생입니다! <br>
     아래 제가 자주 사용하는 어플들로  <br>
     저의 취향을 낱낱이 알려드리겠습니다 후훗<br>
     맨 위 프로필 옆 토글을 누르면 더 개인적인 취향이!!
@@ -72,7 +72,16 @@
       window.location.href = 'index.html';  // 왼쪽으로 이동
     }
   });
+  // 실제 화면 높이를 CSS 변수로
+  function setVh() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+  setVh();
+  window.addEventListener('resize', setVh);
 </script>
+
+
    
 
 </body>
