@@ -9,7 +9,7 @@
 
 <body>
 <div class="wrapper">
-     <!-- 상단 -->
+     
     <header class="header">
         <img src="./images/insta_2.png" alt="인스타 프로필2">
                 <label class="insta-toggle">
@@ -18,53 +18,53 @@
 </label>
     </header>
 
-    <!-- 메인 내용 -->
+    
     <main>
         <div class="main">
-<h4>최근에 장르별로 꽂힌 노래들이에요</h4>
+<h4>즐겨듣는 아티스트 모음</h4>
 <div class="video-card">
      <iframe 
         width="350" 
         height="200"
-        src="https://www.youtube.com/embed/9iyJOXeHxq8"
+        src="https://www.youtube.com/embed/ZMppsPVqDt4"
         title="YouTube video player"
         frameborder="0"
         allowfullscreen>
     </iframe>
     
 
-    <h3>발라드</h3>
-    <p>김필-어느 날 우리</p>
+    <h3>Hearts2Hearts</h3>
+    <p>Pretty Please-Hearts2Hearts</p>
     <iframe 
         width="350" 
         height="200"
-        src="https://www.youtube.com/embed/4k_HiMxY_gg"
+        src="https://www.youtube.com/embed/DJF_i7DRAIw"
         title="YouTube video player"
         frameborder="1"
         allowfullscreen>
     </iframe>
-    <h3>케이팝</h3>
-    <p>하츠투하츠- apple pie</p>
+    <h3>VVON</h3>
+    <p>Time Out-VVON</p>
     <iframe 
         width="350" 
         height="200"
-        src="https://www.youtube.com/embed/9VU1les4yh4"
+        src="https://www.youtube.com/embed/6ZXzn1jwtM4"
         title="YouTube video player"
         frameborder="2"
         allowfullscreen>
     </iframe>
-    <h3>힙합</h3>
-    <p>제네 더 질라- No Easy</p>
+    <h3>잔나비</h3>
+    <p>슬픔이여 안녕-잔나비</p>
     <iframe 
         width="350" 
         height="200"
-        src="https://www.youtube.com/embed/cw87Hix2TSU"
+        src="https://www.youtube.com/embed/YqPCzTSgXZo"
         title="YouTube video player"
         frameborder="3"
         allowfullscreen>
     </iframe>
-    <h3>인디</h3>
-    <p>윤지영,카더가든- 언젠가 너와 나</p>
+    <h3>GIST</h3>
+    <p>몇번의 여름-TOIL&GIST</p>
 </div>
 
 
@@ -72,7 +72,7 @@
         
     </main>
 
-    <!-- 하단 -->
+    
     <footer class="footer">
         <nav class="nav-bar">
             <a href="/">
@@ -98,17 +98,17 @@
 
   // 페이지별 토글 초기 상태 설정
   if (window.location.pathname.includes('hiddenmusic.html')) {
-    toggleBtn.checked = true;  // hidden.html에서는 오른쪽
+    toggleBtn.checked = true;  
   } else {
-    toggleBtn.checked = false; // index.html에서는 왼쪽
+    toggleBtn.checked = false; 
   }
 
   // 체크 상태가 바뀔 때
   toggleBtn.addEventListener('change', () => {
     if (toggleBtn.checked) { 
-      window.location.href = 'hiddenmusic.html'; // 오른쪽으로 이동
+      window.location.href = 'hiddenmusic.html'; 
     } else {
-      window.location.href = 'music.html';  // 왼쪽으로 이동
+      window.location.href = 'music.html';  
     }
   });
 </script>

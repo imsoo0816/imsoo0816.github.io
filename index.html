@@ -9,7 +9,7 @@
 
 <body>
 <div class="wrapper">
-     <!-- 상단 -->
+     
     <header class="header">
         <img src="./images/insta_1.png" alt="인스타 프로필1">
 <label class="insta-toggle">
@@ -17,7 +17,7 @@
   <span class="slider"></span>
 </label>    </header>
 
-    <!-- 메인 내용 -->
+   
     <main>
         <div class="main">
 <img src="./images/intro_p.jpg" alt="">
@@ -32,7 +32,7 @@
         
     </main>
 
-    <!-- 하단 -->
+    
     <footer class="footer">
         <nav class="nav-bar">
             <a href="/">
@@ -57,21 +57,28 @@
 <script>
   const toggleBtn = document.getElementById('toggleBtn');
 
-  // 페이지별 토글 초기 상태 설정
+  //  토글 초기 상태 설정
   if (window.location.pathname.includes('hidden.html')) {
-    toggleBtn.checked = true;  // hidden.html에서는 오른쪽
+    toggleBtn.checked = true;  
   } else {
-    toggleBtn.checked = false; // index.html에서는 왼쪽
+    toggleBtn.checked = false;
   }
 
   // 체크 상태가 바뀔 때
   toggleBtn.addEventListener('change', () => {
     if (toggleBtn.checked) { 
-      window.location.href = 'hidden.html'; // 오른쪽으로 이동
+      window.location.href = 'hidden.html'; 
     } else {
-      window.location.href = 'index.html';  // 왼쪽으로 이동
+      window.location.href = 'index.html';  
     }
   });
+  // 실제 화면 높이를 CSS 변수로
+  function setVh() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+  setVh();
+  window.addEventListener('resize', setVh);
 </script>
 
 <script>

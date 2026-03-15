@@ -9,7 +9,7 @@
 
 <body>
 <div class="wrapper">
-     <!-- 상단 -->
+     
     <header class="header">
         <img src="./images/insta_2.png" alt="인스타 프로필2">
                <label class="insta-toggle">
@@ -18,7 +18,7 @@
 </label>
     </header>
 
-    <!-- 메인 내용 -->
+   
     <main>
         <div class="main">
 
@@ -62,7 +62,7 @@
         
     </main>
 
-    <!-- 하단 -->
+  
     <footer class="footer">
         <nav class="nav-bar">
             <a href="/">
@@ -88,17 +88,17 @@
 
   // 페이지별 토글 초기 상태 설정
   if (window.location.pathname.includes('hiddenyoutube.html')) {
-    toggleBtn.checked = true;  // hidden.html에서는 오른쪽
+    toggleBtn.checked = true;  
   } else {
-    toggleBtn.checked = false; // index.html에서는 왼쪽
+    toggleBtn.checked = false; 
   }
 
   // 체크 상태가 바뀔 때
   toggleBtn.addEventListener('change', () => {
     if (toggleBtn.checked) { 
-      window.location.href = 'hiddenyoutube.html'; // 오른쪽으로 이동
+      window.location.href = 'hiddenyoutube.html'; 
     } else {
-      window.location.href = 'youtube.html';  // 왼쪽으로 이동
+      window.location.href = 'youtube.html';  
     }
   });
 </script>

@@ -24,26 +24,28 @@ body{
     display: flex;
     flex-direction: column;
 }
+/*header, footer*/
 .header{
     position: fixed;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-
     width: 360px;
     height: 80px;
-
     background: white;
     display:flex;
     justify-content:center;
     align-items:center;
     gap:10px;
-
     box-shadow:0 10px 10px rgba(0,0,0,0.1);
-border-radius: 30px 30px 0 0;
+    border-radius: 30px 30px 0 0;
     z-index:999;
 }
-
+#playlist {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 .footer{
     width:100%;
     display:flex;
@@ -59,18 +61,18 @@ border-radius: 30px 30px 0 0;
 }
 
 
-
+/*nav-bar*/
 .nav-bar img{
     height: 55px;
     width: 55px;
 }
 .nav-bar{
-  position: fixed; /* sticky 대신 absolute */
+  position: fixed; 
   bottom: calc(12px + env(safe-area-inset-bottom)); 
   width: 340px;
   height: 70px;
   padding:10px 0;
-  border-radius: 35px; /* 더 둥글게 */
+  border-radius: 35px; 
   background: #ffffff;
   display: flex;
   justify-content: center;
@@ -85,23 +87,15 @@ border-radius: 30px 30px 0 0;
   z-index: 10;
 }
 
-
+/*main*/
 main{
   position: fixed;
-
-  top: 90px; /* header 높이 */
-  bottom: calc(110px + env(safe-area-inset-bottom)); /* nav 높이 + 여백 */
-
+  top: 90px; 
+  bottom: calc(110px + env(safe-area-inset-bottom)); 
   width: 360px;
   overflow-y: auto;
-
   display:flex;
   justify-content:center;
-}
-#playlist{
-    display:flex;
-    justify-content:center;
-    flex-direction: column;
 }
 
 main::-webkit-scrollbar{
@@ -125,6 +119,8 @@ main::-webkit-scrollbar{
     color: rgb(57, 57, 57);
     text-align: center;
 }
+
+/*video*/
 .video-card{
     width:335px;
     margin-bottom:20px;
@@ -145,7 +141,9 @@ main::-webkit-scrollbar{
     font-size:0.9rem;
     color:gray;
 }
-/* 전체 스위치 */
+
+/*toggle*/
+
 .insta-toggle {
   position: relative;
   display: inline-block;
@@ -153,7 +151,7 @@ main::-webkit-scrollbar{
   height: 32px;
 }
 
-/* 체크박스 숨기기 */
+
 .insta-toggle input {
   opacity: 0;
   width: 0;
