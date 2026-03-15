@@ -80,9 +80,10 @@ border-radius: 30px 30px 0 0;
   z-index: 10;
 }
 
+
 main{
   position: fixed;
-
+height: calc(100vh - 80px - 82px - env(safe-area-inset-bottom));
   top: 90px; /* header 높이 */
   bottom: calc(82px + env(safe-area-inset-bottom)); /* nav 높이 + 여백 */
 
