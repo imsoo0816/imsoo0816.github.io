@@ -7,14 +7,14 @@ body{
     background:#e9e9e9;
 }
 
-.wrapper {
-    width: 360px;
-    height: calc(var(--vh, 1vh) * 100); /* 100vh 대신 실제 높이 적용 */
-    background: white;
-    border-radius: 30px;
-    overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-    position: relative;
+.wrapper{
+    width:360px;
+    height: 100vh;
+    background:white;
+    border-radius:30px;
+    overflow:hidden;
+    box-shadow:0 20px 40px rgba(0,0,0,0.2);
+    position:relative;
     display: flex;
     flex-direction: column;
 }
@@ -50,7 +50,7 @@ body{
     width: 55px;
 }
 .nav-bar{
-  position: absolute; /* sticky 대신 absolute */
+  position: fixed; /* sticky 대신 absolute */
   bottom: 12px; /* 바닥에서 12px 띄움 */
   width: 340px;
   height: 70px;
