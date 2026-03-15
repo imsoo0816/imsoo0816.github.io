@@ -10,12 +10,12 @@ body{
 .wrapper{
     width:360px;
     height: calc( 100vh - env(safe-area-inset-bottom));
-    padding-bottom: env(safe-area-inset-bottom);
+    bottom: calc(env(safe-area-inset-bottom));
     background:white;
     border-radius:30px;
     overflow:hidden;
     box-shadow:0 20px 40px rgba(0,0,0,0.2);
-    position:relative;
+    position:fixed;
     display: flex;
     flex-direction: column;
 }
@@ -86,13 +86,9 @@ main{
   position: fixed;
 
   top: 90px; /* header 높이 */
-  bottom: calc(82px + env(safe-area-inset-bottom)); /* nav 높이 + 여백 */
-
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: calc(110px + env(safe-area-inset-bottom)); /* nav 높이 + 여백 */
 
   width: 360px;
-height: calc(100vh - 80px - 90px - env(safe-area-inset-bottom));
   overflow-y: auto;
 
   display:flex;
