@@ -91,6 +91,10 @@ body{
     filter: drop-shadow(0 2px 6px rgba(0,0,0,0.5));
     transform: scale(1.1);
 }
+.nav-bar a:hover img{
+    transform: translateY(-3px) scale(1.1); 
+    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.35));
+}
 
 /*main*/
 main{
@@ -125,6 +129,12 @@ main::-webkit-scrollbar{
     padding: 20px;
     margin-top: 0;
     color: orange;
+        flex-direction: column;
+
+}
+#intro img{
+  width: 100px;
+  height: 90px;
 }
 h2 strong{
   color: rgb(255, 94, 0);
@@ -185,8 +195,8 @@ h2 strong{
   right: 0; bottom: 0;
   background-color: #e0e0e0;
   border-radius: 32px;
-  transition: 0.3s;
   box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+  transition: all 0.25s ease;
 }
 
 /* 원 (슬라이드 부분) */
@@ -212,4 +222,9 @@ h2 strong{
   transform: translateX(20px);
 }
 
+
+.insta-toggle:hover .slider{
+    transform: translateY(-1px) scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.35);
+}
 
