@@ -123,13 +123,14 @@ main::-webkit-scrollbar{
 
 }
 #intro{
-  display:flex;
+  width: 300px;
+   display:flex;
     justify-content:center;
     align-items:center;
     padding: 20px;
     margin-top: 0;
     color: orange;
-        flex-direction: column;
+    flex-direction: column;
 
 }
 #intro img{
