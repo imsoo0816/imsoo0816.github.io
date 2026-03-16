@@ -101,6 +101,7 @@ main{
   overflow-y: auto;
   display:flex;
   justify-content:center;
+   
 }
 
 main::-webkit-scrollbar{
@@ -117,12 +118,25 @@ main::-webkit-scrollbar{
     margin-top: 0;
 
 }
+#intro{
+  display:flex;
+    justify-content:center;
+    align-items:center;
+    padding: 20px;
+    margin-top: 0;
+    color: orange;
+}
+h2 strong{
+  color: rgb(255, 94, 0);
+}
+
 .main h4{
     margin-bottom:15px;
     margin-top: 0;
     padding-left: 5px;
     color: rgb(57, 57, 57);
     text-align: center;
+    
 }
 
 /*video*/

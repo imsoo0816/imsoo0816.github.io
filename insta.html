@@ -9,33 +9,32 @@
 
 <body>
 <div class="wrapper">
-   
+     
     <header class="header">
-        <img src="./images/insta_2.png" alt="인스타 프로필1">
-        <label class="insta-toggle">
+        <img src="./images/insta_1.png" alt="인스타 프로필1">
+<label class="insta-toggle">
   <input type="checkbox" id="toggleBtn">
   <span class="slider"></span>
-</label>
-    </header>
+</label>    </header>
 
-  
+   
     <main>
         <div class="main">
-<img src="./images/sea_img.jpg" alt="">
-<p> <strong>yeoon_0oh</strong>   저는 e 중에서 제일 i 같은 entp 입니당 <br>
-장난끼가 좀 있지만 진지한 대화도 좋아합니다!!<br> <br>
-금방 질려서 딱히 고정적인 취미는 없는데 <br>
-맛있는 거 먹는 걸 제일 꾸준히(?) 좋아하는 것 같아요 <br> <br>
-위에는 해산물이 사는 바다 사진이에요 
+<img src="./images/intro_p.jpg" alt="">
+<p> <strong>yeoon_0oh</strong> 안녕하세요! 프론트 아기사자 임수연입니다!<br>
+      인공지능학부 24학번이고 05년생입니다!! <br> <br>
+    아래 제가 자주 사용하는 어플들로  <br>
+    저를 낱낱이 알려드리겠습니다 후훗
+      <br>
 </p>
         </div>
         
     </main>
 
-  
+    
     <footer class="footer">
         <nav class="nav-bar">
-            <a href="./insta.html" class="active">
+            <a href="insta.html" class="active">
                 <img src="./images/insta_icon.png" alt="인스타 로고">
             </a>
 
@@ -53,25 +52,38 @@
         </nav>
     </footer>
 </div>
-   <script>
+
+<script>
   const toggleBtn = document.getElementById('toggleBtn');
 
-  // 페이지별 토글 초기 상태 설정
+  //  토글 초기 상태 설정
   if (window.location.pathname.includes('hidden.html')) {
-    toggleBtn.checked = true; 
+    toggleBtn.checked = true;  
   } else {
-    toggleBtn.checked = false; 
+    toggleBtn.checked = false;
   }
 
   // 체크 상태가 바뀔 때
   toggleBtn.addEventListener('change', () => {
     if (toggleBtn.checked) { 
-      window.location.href = 'hidden.html';
+      window.location.href = 'hidden.html'; 
     } else {
       window.location.href = 'index.html';  
     }
   });
+  // 실제 화면 높이를 CSS 변수로
+  function setVh() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+  setVh();
+  window.addEventListener('resize', setVh);
 </script>
+
+<script>
+  
+</script>
+   
 
 </body>
 </html>
